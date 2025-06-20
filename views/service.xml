@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="parc_automobile_centre_form" model="ir.ui.view">
+        <field name="name">parc.automobile.centre.form</field>
+        <field name="model">parc.automobile.centre</field>
+        <field name="arch" type="xml">
+            <form string="Centre / Service">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="responsable"/>
+                        <field name="adresse"/>
+                        <field name="telephone"/>
+                        <field name="email"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="parc_automobile_centre_list" model="ir.ui.view">
+        <field name="name">parc.automobile.centre.list</field>
+        <field name="model">parc.automobile.centre</field>
+        <field name="arch" type="xml">
+            <list string="Centre / Service">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="responsable"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- <menuitem id="parc_automobile_centre_menu" name="Centres / Services" parent="fleet_management_menu"/> -->
+
+    <record model="ir.actions.act_window" id="action_parc_automobile_centre">
+        <field name="name">Centres / Services</field>
+        <field name="res_model">parc.automobile.centre</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_id" ref="parc_automobile_centre_list"/>
+    </record>
+
+</odoo>
