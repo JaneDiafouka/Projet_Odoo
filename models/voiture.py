@@ -40,6 +40,13 @@ class Voiture(models.Model):
         ('vendu', 'Vendu'),
     ], string="Statut", required=True, default='en_service')
 
+
+    devise = fields.Selection([
+        ('FCFA', 'FCFA'),
+        ('EURO', 'EURO(s)'),
+        ('DOLLAR', 'DOLLAR(s)')
+    ], string="devise", required=True, default='FCFA')
+
     date_dernier_entretien = fields.Date(string='Dernier Entretien',default=fields.Date.today)
     prochaine_visite_technique = fields.Date(string='Prochaine Visite')
     documets_ids = fields.Many2many('ir.attachment', 'attachement_100', 'attachment_id', string="Papiers de Douane")

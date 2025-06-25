@@ -39,6 +39,7 @@
                                 <field name="date_service" />
                                 <field name="kilometrage" />
                                 <field name="montant_location" />
+                                <field name="devise" />
                                 <field name="type_vehicule"/>
                             </group>
                             <group>

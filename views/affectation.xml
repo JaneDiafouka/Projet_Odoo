@@ -10,6 +10,7 @@
                 <field name="date_fin_affectation"/>
                 <field name="client_id"/>
                 <field name="employe_id"/>
+                <field name="voiture_id"/>
             </list>
         </field>
     </record>
@@ -26,6 +27,7 @@
                         <field name="date_fin_affectation"/>
                         <field name="client_id"/>
                         <field name="employe_id"/>
+                        <field name="voiture_id"/>
                         <field name="description"/>
                     </group>
                 </sheet>

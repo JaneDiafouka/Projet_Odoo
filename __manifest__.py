@@ -34,6 +34,7 @@
         'views/contrat_location.xml',
         'views/employe.xml',
         'views/entretien.xml',
+        # 'data/cron.xml',
         'views/sequence.xml',
         'views/service.xml',
         'views/affectation.xml',

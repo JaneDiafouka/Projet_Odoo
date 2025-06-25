@@ -8,10 +8,12 @@
             <field name="arch" type="xml">
                 <list>
                     <field name="name" />
+                    <field name="type_maintenance" />
                     <field name="voiture_id" />
                     <field name="type_entretien" />
                     <field name="date_entretien" />
                     <field name="cout" />
+                    <field name="devise" />
                 </list>
             </field>
         </record>
@@ -25,12 +27,14 @@
                         <group>
                             <group>
                                 <field name="name" />
+                                <field name="type_maintenance" />
                                 <field name="voiture_id" />
                                 <field name="type_entretien" />
                             </group>
                             <group>
                                 <field name="date_entretien" />
                                 <field name="cout" />
+                                <field name="devise" />
                                 <field name="date_prochain_entretien" /> 
                             </group>
                         </group>

@@ -12,12 +12,14 @@ class Affectation(models.Model):
     date_debut_affectation = fields.Date(string="Date de debut d'affectation",  required=True)
     date_fin_affectation = fields.Date(string="Date de fin d'affectation",  required=True)
     client_id = fields.Many2one('parc.automobile.client', string="Client Associé", required=False)
-    employe_id = fields.Many2one('parc.automobile.employe', string="Employe Associée", required=False)
+    employe_id = fields.Many2one('parc.automobile.employe', string="Employé Associé", required=False)
+    voiture_id = fields.Many2one('parc.automobile.voiture', string="Voiture Associée", required=False)
     description = fields.Text(string='Description')
     
     _sql_constraints = [
         ('unique_client_id', 'unique(client_id)', 'Chaque affectation ne peut avoir qu\'un seul client.'),
-        ('unique_employe_id', 'unique(employe_id)', 'Chaque affectation ne peut avoir qu\'un seul employe.')
+        ('unique_employe_id', 'unique(employe_id)', 'Chaque affectation ne peut avoir qu\'un seul employe.'),
+        ('unique_voiture_id', 'unique(voiture_id)', 'Chaque affectation ne peut avoir qu\'une seule voiture.'),
     ]
     
     @api.model
