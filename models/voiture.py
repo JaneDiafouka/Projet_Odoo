@@ -56,6 +56,7 @@ class Voiture(models.Model):
     montant_location = fields.Integer(string="Prix de location")
     description = fields.Text(string='Description')
     centre_id = fields.Many2one('parc.automobile.centre', string="Centre/Service associé")
+    document_ids = fields.One2many('parc.automobile.document', 'voiture_id', string='Liste des Documents')
     
     
     

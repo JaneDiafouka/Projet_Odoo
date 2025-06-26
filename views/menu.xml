@@ -87,6 +87,13 @@
             sequence="4"
         />
         <menuitem
+            id="parc_auto_document"
+            name="Documents"
+            parent="parc_auto_param"
+            action="action_parc_automobile_document" 
+            sequence="6"
+        />
+        <menuitem
             id="parc_auto_entretien"
             name="Entretien Auto"
             parent="parc_auto_param"

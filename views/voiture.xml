@@ -58,6 +58,19 @@
                             <page string="Historique ou Autres Infos">
                                 <field name="description" placeholder="Ajouter des remarques ou détails supplémentaires..." />
                             </page>
+                            <page string="Document associe">
+                                <field name="document_ids" > 
+                                    <form string="Document" editable="bottom">
+                                        <group>
+                                            <field name="name" readonly="1"/>
+                                            <field name="type_document" />
+                                            <field name="date_delivrance" />
+                                            <field name="lieu_delivrance" />
+                                            <field name="date_expiration" />
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
                         </notebook>
                     </sheet>
                 </form>

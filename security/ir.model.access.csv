@@ -28,3 +28,4 @@ access_parc_automobile_employe_utilisateur,parc.automobile.employe,model_parc_au
 access_parc_automobile_entretien_utilisateur,parc.automobile.entretien,model_parc_automobile_entretien,group_parc_automobile_user,1,1,1,0
 access_parc_automobile_centre_user,access.parc.automobile.centre,model_parc_automobile_centre,base.group_user,1,1,1,1
 access_parc_automobile_affectation_user,access.parc.automobile.affectation,model_parc_automobile_affectation,base.group_user,1,1,1,1
+access_parc_automobile_document_user,access.parc.automobile.document,model_parc_automobile_document,base.group_user,1,1,1,1

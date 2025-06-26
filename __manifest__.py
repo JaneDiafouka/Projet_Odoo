@@ -38,6 +38,7 @@
         'views/sequence.xml',
         'views/service.xml',
         'views/affectation.xml',
+        'views/document.xml',
         'views/menu.xml',
     ],
     'installable': True,
