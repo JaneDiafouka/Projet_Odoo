@@ -29,3 +29,5 @@ access_parc_automobile_entretien_utilisateur,parc.automobile.entretien,model_par
 access_parc_automobile_centre_user,access.parc.automobile.centre,model_parc_automobile_centre,base.group_user,1,1,1,1
 access_parc_automobile_affectation_user,access.parc.automobile.affectation,model_parc_automobile_affectation,base.group_user,1,1,1,1
 access_parc_automobile_document_user,access.parc.automobile.document,model_parc_automobile_document,base.group_user,1,1,1,1
+access_parc_automobile_carburant_user,access.parc.automobile.carburant,model_parc_automobile_carburant,base.group_user,1,1,1,1
+access_parc_automobile_dashboard_user,access.parc.automobile.dashboard,model_parc_automobile_dashboard,base.group_user,1,1,1,1

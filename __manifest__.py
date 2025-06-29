@@ -17,7 +17,6 @@
         7. Carte Grise
         8. Contrat de Location
         9. Entretien
-
     """,
     'category': 'tp',
     'website': 'https://www.groupeisi.com/',
@@ -34,11 +33,12 @@
         'views/contrat_location.xml',
         'views/employe.xml',
         'views/entretien.xml',
-        # 'data/cron.xml',
         'views/sequence.xml',
         'views/service.xml',
         'views/affectation.xml',
         'views/document.xml',
+        'views/carburant.xml',
+        'views/dashboard.xml',
         'views/menu.xml',
     ],
     'installable': True,

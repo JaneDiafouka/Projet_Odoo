@@ -47,6 +47,8 @@ class Voiture(models.Model):
         ('DOLLAR', 'DOLLAR(s)')
     ], string="devise", required=True, default='FCFA')
 
+    
+
     date_dernier_entretien = fields.Date(string='Dernier Entretien',default=fields.Date.today)
     prochaine_visite_technique = fields.Date(string='Prochaine Visite')
     documets_ids = fields.Many2many('ir.attachment', 'attachement_100', 'attachment_id', string="Papiers de Douane")
@@ -57,6 +59,14 @@ class Voiture(models.Model):
     description = fields.Text(string='Description')
     centre_id = fields.Many2one('parc.automobile.centre', string="Centre/Service associé")
     document_ids = fields.One2many('parc.automobile.document', 'voiture_id', string='Liste des Documents')
+    carburant_id = fields.One2many('parc.automobile.carburant', 'voiture_id', string='Liste des consommation carburants')
+
+    _sql_constraints = [
+        ('unique_carburant_id', 'unique(carburant_id)', 'Chaque affectation ne peut avoir qu\'une seule consommation carburant.'),
+    ]
+
+    def __str__(self):
+        return "foo"
     
     
     

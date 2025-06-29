@@ -12,3 +12,5 @@ from . import entretien
 from . import service
 from . import affectation
 from . import document
+from . import carburant
+from . import fleet_dashboard

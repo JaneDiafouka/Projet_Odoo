@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_form_parc_automobile_dashboard" model="ir.ui.view">
+        <field name="name">parc.automobile.dashboard.form</field>
+        <field name="model">parc.automobile.dashboard</field>
+        <field name="arch" type="xml">
+            <form string="Tableau de bord du parc" create="false" edit="false">
+                <sheet>
+                    <group col="2">
+                        <field name="total_voitures"/>
+                        <field name="kilometrage_total"/>
+                        <field name="nb_voitures_service"/>
+                        <field name="nb_voitures_panne"/>
+                        <field name="nb_entretien"/>
+                        <field name="consommation_moyenne"/>
+                    </group>
+                    <footer>
+                        <button string="Actualiser les données" type="object" name="action_actualiser_stats" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_parc_automobile_dashboard" model="ir.actions.act_window">
+        <field name="name">Tableau de bord du parc</field>
+        <field name="res_model">parc.automobile.dashboard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+
+</odoo>

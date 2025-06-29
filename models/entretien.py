@@ -11,7 +11,7 @@ class Entretien(models.Model):
     
     
     name = fields.Char(string="Numéro d'entretien", required=True)
-    voiture_id = fields.Many2one('parc.automobile.voiture', string="Liste des voitures")
+    montant = fields.Float(string="Montant total")
     type_entretien = fields.Selection(string="Type d'entretien",
         selection=[('vidange', 'Vidange'),
                    ('change', 'Changement des pièces'),

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="parc_automobile_carburant_form" model="ir.ui.view">
+        <field name="name">parc.automobile.carburant.form</field>
+        <field name="model">parc.automobile.carburant</field>
+        <field name="arch" type="xml">
+            <form string="Consommation Carburant">
+                <sheet>
+                    <group>
+                        <field name="voiture_id"/>
+                        <field name="date"/>
+                        <field name="litres"/>
+                        <field name="kilometres_parcourus"/>
+                        <field name="consommation_moyenne" readonly="1"/>
+                        <field name="commentaire"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="parc_automobile_carburant_list" model="ir.ui.view">
+        <field name="name">parc.automobile.carburant.list</field>
+        <field name="model">parc.automobile.carburant</field>
+        <field name="arch" type="xml">
+            <list string="Historique carburant">
+                <field name="date"/>
+                <field name="litres"/>
+                <field name="kilometres_parcourus"/>
+                <field name="consommation_moyenne"/>
+            </list>
+        </field>
+    </record>
+
+
+    <!-- Action -->
+    <record  model="ir.actions.act_window" id="action_parc_automobile_carburant">
+        <field name="name">Affectations</field>
+        <field name="res_model">parc.automobile.carburant</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_id" ref="parc_automobile_carburant_list"/>
+    </record>
+
+</odoo>

@@ -58,7 +58,20 @@
                             <page string="Historique ou Autres Infos">
                                 <field name="description" placeholder="Ajouter des remarques ou détails supplémentaires..." />
                             </page>
-                            <page string="Document associe">
+                            <page string="Consommation Carburant Associée">
+                                <field name="carburant_id" > 
+                                    <form string="Carburant" editable="bottom">
+                                        <group>
+                                            <field name="name" readonly="1"/>
+                                            <field name="date"/>
+                                            <field name="litres"/>
+                                            <field name="kilometres_parcourus"/>
+                                            <field name="consommation_moyenne"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page string="Document Associé">
                                 <field name="document_ids" > 
                                     <form string="Document" editable="bottom">
                                         <group>
@@ -71,6 +84,7 @@
                                     </form>
                                 </field>
                             </page>
+
                         </notebook>
                     </sheet>
                 </form>

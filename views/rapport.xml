@@ -1,0 +1,18 @@
+<template id="rapport_mensuel_entretien">
+  <t t-call="web.basic_layout">
+    <t t-set="doc" t-value="docs"/>
+    <div class="page">
+      <h2>Rapport mensuel – Entretien</h2>
+      <table class="table table-sm">
+        <tr><th>Véhicule</th><th>Date</th><th>Montant</th></tr>
+        <t t-foreach="doc" t-as="e">
+          <tr>
+            <td><t t-esc="e.voiture_id.name"/></td>
+            <td><t t-esc="e.date_operation"/></td>
+            <td><t t-esc="e.montant"/></td>
+          </tr>
+        </t>
+      </table>
+    </div>
+  </t>
+</template>
